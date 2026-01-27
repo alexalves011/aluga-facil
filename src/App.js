@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import ProductsList from "./components/ProductsList";
+import ExclusiveSection from "./components/ExclusiveSection";
+import TestimoniaList from "./components/TestimoniaList";
+import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -31,7 +34,10 @@ function App() {
               <ProductsList products={products} />
             </div>
           </div>
+          <ExclusiveSection />
+          <TestimoniaList />
         </main>
+        <Footer />
       </div>
     </Router>
   );
